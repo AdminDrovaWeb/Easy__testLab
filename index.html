@@ -20,19 +20,19 @@
         <nav class="nav">
             <ul class="header__nav__list">
                 <li class="list__nav__link">
-                    <a href="#" class="list__nav__text">Как это работает</a>
+                    <a onclick="slowScroll('#howDoWork')" href="#" class="list__nav__text">Как это работает</a>
                     <img src="img/nav__cntrl.svg" alt="nav__btn" class="list__nav__cntrl">
                 </li>
                 <li class="list__nav__link">
-                    <a href="#" class="list__nav__text">3-й блок</a>
+                    <a onclick="slowScroll('#3block')" href="#" class="list__nav__text">3-й блок</a>
                     <img src="img/nav__cntrl.svg" alt="nav__btn" class="list__nav__cntrl">
                 </li>
                 <li class="list__nav__link">
-                    <a href="#" class="list__nav__text">Вопросы и ответы</a>
+                    <a onclick="slowScroll('#questions')" href="#" class="list__nav__text">Вопросы и ответы</a>
                     <img src="img/nav__cntrl.svg" alt="nav__btn" class="list__nav__cntrl">
                 </li>
                 <li class="list__nav__link">
-                    <a href="#" class="list__nav__text">Форма</a>
+                    <a onclick="slowScroll('#form__block')" href="#" class="list__nav__text">Форма</a>
                     <img src="img/nav__cntrl.svg" alt="nav__btn" class="list__nav__cntrl">
                 </li>
             </ul>
@@ -60,7 +60,7 @@
     <!--Конец блока хэроу-->
     </section>
     <!--Блок как оно работает-->
-    <section class="section__work">
+    <section id="howDoWork" class="section__work">
         <div class="container section__work">
             <h1 class="section__work__heading">
                 Как это работает
@@ -119,7 +119,7 @@
     </section>
     <!--Конец блока как оно работает-->
     <!--Начало третьего блока-->
-    <section class="section__three">
+    <section id="3block" class="section__three">
         <div class="container section__block__three">
             <div class="parts__block__three">
                 <div class="left__part__block">
@@ -284,7 +284,164 @@
             </div>
         </div>
     </section>
-    <!--Конец блока Отзывы-->
+    <section id="questions" class="section__questions">
+        <div class="container container__questions">
+            <h1 class="questions__heading">
+                Вопросы и ответы
+            </h1>
+            <div class="accordion">
+                <div data-tab="tab-1" class="accordion__title">
+                    <p>Подтверждено: сознание наших соотечественников не замутнено пропагандой?</p>
+                    <span></span>
+                </div>
+                <div id="tab-1" class="accordion__content">
+                    <p>
+                        В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по разработке дальнейших направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня говорит о возможностях существующих финансовых и административных условий.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div data-tab="tab-2" class="accordion__title">
+                    <p>Прототип нового сервиса - это как трубный призыв?</p>
+                    <span></span>
+                </div>
+                <div id="tab-2" class="accordion__content">
+                    <p>
+                        В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по разработке дальнейших направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня говорит о возможностях существующих финансовых и административных условий.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div data-tab="tab-3" class="accordion__title">
+                    <p>Частокол на границе продолжает удивлять?</p>
+                    <span></span>
+                </div>
+                <div id="tab-3" class="accordion__content">
+                    <p>
+                        В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по разработке дальнейших направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня говорит о возможностях существующих финансовых и административных условий.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div data-tab="tab-4" class="accordion__title">
+                    <p>Очевидцы сообщают, что слышали грохот грома градущих изменений?</p>
+                    <span></span>
+                </div>
+                <div id="tab-4" class="accordion__content">
+                    <p>
+                        В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по разработке дальнейших направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня говорит о возможностях существующих финансовых и административных условий.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div data-tab="tab-5" class="accordion__title">
+                    <p>И по сей день в центральных регионах звучит перекатами печальный плач оппозиции?</p>
+                    <span></span>
+                </div>
+                <div id="tab-5" class="accordion__content">
+                    <p>
+                        В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по разработке дальнейших направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня говорит о возможностях существующих финансовых и административных условий.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div data-tab="tab-6" class="accordion__title">
+                    <p>Нынче никто не может себе позволить инициировать треск разлетающихся скреп?</p>
+                    <span></span>
+                </div>
+                <div id="tab-6" class="accordion__content">
+                    <p>
+                        В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по разработке дальнейших направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня говорит о возможностях существующих финансовых и административных условий.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div data-tab="tab-7" class="accordion__title">
+                    <p>Высококачественный прототип будущего проекта обнадёживает?</p>
+                    <span></span>
+                </div>
+                <div id="tab-7" class="accordion__content">
+                    <p>
+                        В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по разработке дальнейших направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня говорит о возможностях существующих финансовых и административных условий.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Конец блока аккордеона-->
+
+    <!--Начало блока с текстом-->
+    <section class="section__text__block">
+        <div class="container container__text__block">
+            <div class="container__with__texts">
+                <h1 class="container__text__heading">
+                    Опрошенных пользовались микрокредитами
+                </h1>
+                <p class="container__text__descr">
+                    Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафах Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафах
+                </p>
+            </div>
+
+            <div class="container__with__texts">
+                <h1 class="container__text__heading">
+                    Опрошенных пользовались микрокредитами
+                </h1>
+                <p class="container__text__descr">
+                    Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафах Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафахНе могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафах
+                </p>
+            </div>
+
+            <div class="container__with__texts">
+                <h1 class="container__text__heading">
+                    Опрошенных пользовались микрокредитами
+                </h1>
+                <p class="container__text__descr">
+                    Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафах Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафахНе могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафах
+                </p>
+            </div>
+
+            <div class="container__with__texts">
+                <h1 class="container__text__heading">
+                    Опрошенных пользовались микрокредитами
+                </h1>
+                <p class="container__text__descr">
+                    Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафах Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафах
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--Конец блока с текстом-->
+    <!--Начало блока с формой обратной связи-->
+    <section id="form__block" class="section__form">
+        <div class="container container__form">
+            <h1 class="form__heading">
+                Отправь форму
+            </h1>
+            <div class="container__for__form">
+                <form class="footer__form" action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST" class="form">
+                    <div class="inputs__container">
+                        <input required type="text" name="nameUser" placeholder="Имя" class="input" id="nameUser">
+                        <input required type="text" name="telephone" placeholder="Телефон" class="input" id="telephone">
+                    </div>
+                    <div class="footer__button__container">
+                        <div class="container__inputs__checkbox">
+                            <input class="footer__button__checkbox" type="checkbox" id="cb1"> <label for="cb1">Согласен на обработку данных</label>
+                        </div>
+                        <button type="submit" class="footer__btn__descr">
+                        Отправить
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Конец блока с формой обратной связи-->
     <footer class="footer">
         <div class="footer__container">
             <h1 class="footer__text">
@@ -296,5 +453,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/burger.js"></script>
+    <script src="js/accordeon.js"></script>
+    <script src="js/scrollToBlock.js"></script>
 </body>
 </html>
