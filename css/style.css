@@ -5,6 +5,8 @@
     --text-work-descr: #5E646A;
     --bckg-color-reviews: #F6F8FA;
     --text--nav:#83898F;
+    --blue--hover:#2A6CEA;
+    --brd-acrd-color:#ECEFF2;
 }
 @font-face {
     font-family: "Graphik LCG";  
@@ -599,6 +601,389 @@ img {
 .slider .slick-dots li:not(:last-child) {
     margin-right: 20px;
 }
+/*Конец блока с слайдером*/
+
+
+/*Начало блока с аккордеоном*/
+
+.questions__heading {
+    color: var(--text-color-btn);
+    text-align: center;
+    font-family: Graphik LCG;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    padding-bottom: 41px;
+    padding-top: 80px;
+    margin: 0;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 100px;
+}
+
+.accordion__content {
+    color: var(--text-work-descr);
+    font-family: Graphik LCG;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    overflow: hidden;
+    padding: 0;
+    padding-bottom: 24px;
+    box-sizing: content-box;
+    border-bottom: 1px solid var( --brd-acrd-color);
+    border-top: none;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height .5s ease-out, padding .5s ease-out, opacity .1s ease-out .5s, visibility .1s ease-out .5s;
+}
+
+
+.accordion__content.active {
+    visibility: visible;
+    opacity: 1;
+    transition: max-height .5s ease-out, padding .5s ease-out, opacity .1s ease-out .5s, visibility .1s ease-out .5s;
+}
+
+.accordion__content.active p {
+    margin: 20px 0px 0px 0px;
+}
+
+.accordion__title p {
+    color: var(--text-color-btn);
+    font-family: Graphik LCG;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0;
+    padding-right: 40px;
+}
+
+.accordion__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 24px 0px 0px 0px;
+    cursor: pointer;
+    border-top: none;
+    color: #191C1F;
+    background-color: white;
+    border-bottom: none;
+}
+
+.accordion__title:hover p {
+    color: var(--blue--hover);
+}
+
+.accordion__title:hover span::after {
+    background-color: var(--blue--hover);
+}
+
+.accordion__title:hover span::before {
+    background-color: var(--blue--hover);
+}
+
+.accordion__title:hover span {
+    border-color: var(--blue--hover);
+}
+
+.accordion__title:first-child {
+    border-top: 1px solid var( --brd-acrd-color);
+}
+
+.accordion__title span {
+    display: inline-flex;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    transform: rotate(0);
+    transition: transform .5s ease-out;
+    border: 2px solid var(--text-color-btn);
+    border-radius: 50%;
+    padding-left: 20px;
+}
+
+.accordion__title span::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--text-color-btn);
+}
+
+.accordion__title span::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--text-color-btn);
+}
+
+.accordion__title.active span {
+    transform: rotate(-45deg);
+}
+
+.container__questions {
+    padding-bottom: 56px;
+}
+/*Конец блока с аккордеоном*/
+
+/*Начало Блок с текстом о кредите*/
+.section__text__block {
+    background-color: var(--bckg-color-reviews);
+}
+
+.container__text__block {
+    padding-top: 60px;
+    padding-bottom: 67px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 32px;
+}
+
+.container__with__texts {
+    min-height: 196px;
+    margin-bottom: 37px;
+}
+
+.container__text__heading {
+    color: var(--text-color-btn);
+    font-family: Graphik LCG;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0;
+}
+
+.container__text__descr {
+    color: var(--text-color-btn);
+    font-family: Graphik LCG;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+    margin-top: 17px;
+}
+/*Конец Блок с текстом о кредите*/
+
+/*Начало Блок с текстом о кредите*/
+    .container__form {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .form__heading {
+        color: var(--text-color-btn);
+        text-align: center;
+        font-family: Graphik LCG;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 56px;
+        margin: 0;
+        margin-bottom: 32px;
+    }
+
+    .footer__form {
+        display: grid;
+        justify-content: center;
+    }
+
+    .inputs__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 32px;
+        margin-bottom: 30px;
+    }
+
+    .footer__button__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 32px;
+    }
+    .input {
+        width: 384px;
+        height: 64px;
+        padding: 16px;
+        border-radius: 4px;
+        border: 2px solid var(--bckg-color-reviews);
+        background: var(--bckg-color-reviews);
+    }
+
+    .inputs__container {
+        color: var(--text-work-descr);
+        font-family: Graphik LCG;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+    }
+
+    .footer__btn__descr {
+        width: 384px;
+        padding: 20px 40px;
+        border-radius: 4px;
+        background: var(--blue--hover);
+        border: 0;
+        color: white;
+        text-align: center;
+        font-family: Graphik LCG;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; 
+    }
+
+    .container__inputs__checkbox label {
+        color: var(--text-color-btn);
+        font-family: Graphik LCG;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+ input[type="checkbox"]:checked, 
+ input[type="checkbox"]:not(:checked), 
+ input[type="radio"]:checked, 
+ input[type="radio"]:not(:checked) 
+ {
+     position: absolute;
+     left: -9999px;
+ }
+ 
+ 
+ input[type="checkbox"]:checked + label, 
+ input[type="checkbox"]:not(:checked) + label, 
+ input[type="radio"]:checked + label, 
+ input[type="radio"]:not(:checked) + label {
+     display: inline-block;
+     position: relative;
+     padding-left: 28px;
+     line-height: 20px;
+     cursor: pointer;
+ }
+ 
+ input[type="checkbox"]:checked + label:before, 
+ input[type="checkbox"]:not(:checked) + label:before,
+ input[type="radio"]:checked + label:before, 
+ input[type="radio"]:not(:checked) + label:before {
+     content: "";
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width: 18px;
+     height: 18px;
+     border: 1px solid #dddddd;
+     background-color: transparent;
+ }
+ 
+ input[type="checkbox"]:checked + label:before, 
+ input[type="checkbox"]:not(:checked) + label:before {
+     border-radius: 2px;
+ }
+ 
+ input[type="radio"]:checked + label:before, 
+ input[type="radio"]:not(:checked) + label:before {
+     border-radius: 100%;
+ }
+ 
+ input[type="checkbox"]:checked + label:after, 
+ input[type="checkbox"]:not(:checked) + label:after, 
+ input[type="radio"]:checked + label:after, 
+ input[type="radio"]:not(:checked) + label:after {
+     content: "";
+     position: absolute;
+     -webkit-transition: all 0.2s ease;
+     -moz-transition: all 0.2s ease;
+     -o-transition: all 0.2s ease;
+     transition: all 0.2s ease;
+ }
+ 
+ input[type="checkbox"]:checked + label:after, 
+ input[type="checkbox"]:not(:checked) + label:after {
+     left: 3px;
+     top: 4px;
+     width: 10px;
+     height: 5px;
+     border-radius: 1px;
+     border-left: 4px solid #97EE3F;
+     border-bottom: 4px solid #97EE3F;
+     -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+     -o-transform: rotate(-45deg);
+     -ms-transform: rotate(-45deg);
+     transform: rotate(-45deg);
+ }
+ 
+ input[type="radio"]:checked + label:after, 
+ input[type="radio"]:not(:checked) + label:after {
+     left: 5px;
+     top: 5px;
+     width: 10px;
+     height: 10px;
+     border-radius: 100%;
+     background-color: #97EE3F;
+ }
+ 
+ input[type="checkbox"]:not(:checked) + label:after, 
+ input[type="radio"]:not(:checked) + label:after {
+     opacity: 0;
+ }
+ 
+ input[type="checkbox"]:checked + label:after, 
+ input[type="radio"]:checked + label:after {
+     opacity: 1;
+ }
+
+ :-webkit-input-placeholder { /* WebKit browsers */
+    color:    var(--blue--hover);
+ }
+ :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    var(--blue--hover);
+ }
+ ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    var(--blue--hover);
+ }
+ :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    var(--blue--hover);
+ }
+
+ .input:hover {
+    border-color: var(--blue--hover);
+    transition: border-color .3s linear;
+}
+
+.textarea:hover {
+    border-color: var(--blue--hover);
+    transition: border-color .3s linear;
+}
+
+.footer__form textarea {
+    background-color: var(--blue--hover);
+    border: 1px solid var(--blue--hover);
+}
+
+/*Конец Блок с текстом о кредите*/
 
 .footer {
     background-color: #fff;
@@ -606,7 +991,6 @@ img {
 
 .footer__container {
     border-top: 1px solid #ECEFF2;
-    margin-top: 80px;
 }
 
 .footer__text {
@@ -622,6 +1006,15 @@ img {
 }
 
 /*Адаптив*/
+@media (min-width:1239px) {
+    .container__with__texts:nth-child(3) {
+        margin-bottom: 0px;
+    }
+
+    .container__with__texts:nth-child(4) {
+        margin-bottom: 0px;
+    }
+}
 @media (max-width:1238px) {
     .slider {
         min-width: 0;
@@ -698,7 +1091,13 @@ img {
     }
     .footer__container {
         border-top: 1px solid #ECEFF2;
-        margin-top: 40px;
+    }
+
+    .accordion {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
     }
 }
 
@@ -721,6 +1120,52 @@ img {
         min-width: 0;
         padding: 0px 0%;
     }
+
+    .container__text__block {
+        grid-template-columns: 1fr;
+    }
+
+    .container__with__texts {
+        min-height: 0px;
+    }
+
+    .container__with__texts:last-child {
+        margin-bottom: 20px;
+    }
+
+    .container__text__descr {
+        margin-top: 46px;
+    }
+
+    .container__text__block {
+        padding-top: 20px;
+        padding-bottom: 32px;
+    }
+
+}
+
+@media (max-width: 815px) {
+    .inputs__container {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .input {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer__button__container {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .container__form {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
 }
 
 @media (max-width:747px) {
@@ -738,6 +1183,25 @@ img {
 }
 
 @media (max-width: 560px) {
+
+    .section__work__heading {
+        font-size: 24px;
+    }
+
+    .left__part__heading {
+        margin: 27px 0px;
+    }
+    .questions__heading {
+        font-size: 24px;
+    }
+
+    .reviews__heading {
+        font-size: 24px;
+    }
+
+    .form__heading {
+        font-size: 24px;
+    }
     .section__work__list {
         grid-template-columns: 1fr;
     }
@@ -822,10 +1286,28 @@ img {
         padding-top: 98px;
         padding-bottom: 172px;
     }
+
+    .container__text__descr {
+        margin-top: 14px;
+    }
+}
+
+@media (max-width: 407px) {
+    .input {
+        width: 100%;
+    }
+
+    .footer__btn__descr {
+        width: 100%;
+    }
 }
 
 @media (max-width:374px) {
     .slider__item {
         width: 100%!important;
+    }
+
+    .container__text__block {
+        padding-bottom: 21px;
     }
 }
