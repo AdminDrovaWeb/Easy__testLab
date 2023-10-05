@@ -817,6 +817,11 @@ img {
         padding-top: 20px;
         padding-bottom: 0px;
     }
+
+    .section__hero__block__text {
+        padding-top: 98px;
+        padding-bottom: 172px;
+    }
 }
 
 @media (max-width:374px) {
